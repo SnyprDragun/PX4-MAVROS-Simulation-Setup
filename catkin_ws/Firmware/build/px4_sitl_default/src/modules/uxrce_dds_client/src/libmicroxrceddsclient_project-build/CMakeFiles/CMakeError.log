@@ -1,0 +1,48 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_39f11 && [1/2] Building C object CMakeFiles/cmTC_39f11.dir/src.c.o
+[2/2] Linking C executable cmTC_39f11
+FAILED: cmTC_39f11 
+: && /usr/lib/ccache/cc -I/home/subho/catkin_ws/Firmware/boards/px4/sitl/src -I/home/subho/catkin_ws/Firmware/platforms/posix/src/px4/common/include -I/home/subho/catkin_ws/Firmware/build/px4_sitl_default -I/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/lib -I/home/subho/catkin_ws/Firmware/platforms/posix/src/px4/generic/generic/include -I/home/subho/catkin_ws/Firmware/platforms/posix/src/px4/common/include -I/home/subho/catkin_ws/Firmware/platforms/common -I/home/subho/catkin_ws/Firmware/platforms/common/include -I/home/subho/catkin_ws/Firmware/src -I/home/subho/catkin_ws/Firmware/src/include -I/home/subho/catkin_ws/Firmware/src/lib -I/home/subho/catkin_ws/Firmware/src/lib/matrix -I/home/subho/catkin_ws/Firmware/src/modules -I/home/subho/catkin_ws/Firmware/platforms/posix/include -I/home/subho/catkin_ws/Firmware/build/px4_sitl_default/external/Install/include -DCMAKE_HAVE_LIBC_PTHREAD  -fuse-ld=gold CMakeFiles/cmTC_39f11.dir/src.c.o  -o cmTC_39f11   && :
+CMakeFiles/cmTC_39f11.dir/src.c.o:src.c:function main: error: undefined reference to 'pthread_create'
+CMakeFiles/cmTC_39f11.dir/src.c.o:src.c:function main: error: undefined reference to 'pthread_detach'
+CMakeFiles/cmTC_39f11.dir/src.c.o:src.c:function main: error: undefined reference to 'pthread_join'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c8ea6 && [1/2] Building C object CMakeFiles/cmTC_c8ea6.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c8ea6
+FAILED: cmTC_c8ea6 
+: && /usr/lib/ccache/cc -I/home/subho/catkin_ws/Firmware/boards/px4/sitl/src -I/home/subho/catkin_ws/Firmware/platforms/posix/src/px4/common/include -I/home/subho/catkin_ws/Firmware/build/px4_sitl_default -I/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/lib -I/home/subho/catkin_ws/Firmware/platforms/posix/src/px4/generic/generic/include -I/home/subho/catkin_ws/Firmware/platforms/posix/src/px4/common/include -I/home/subho/catkin_ws/Firmware/platforms/common -I/home/subho/catkin_ws/Firmware/platforms/common/include -I/home/subho/catkin_ws/Firmware/src -I/home/subho/catkin_ws/Firmware/src/include -I/home/subho/catkin_ws/Firmware/src/lib -I/home/subho/catkin_ws/Firmware/src/lib/matrix -I/home/subho/catkin_ws/Firmware/src/modules -I/home/subho/catkin_ws/Firmware/platforms/posix/include -I/home/subho/catkin_ws/Firmware/build/px4_sitl_default/external/Install/include -DCHECK_FUNCTION_EXISTS=pthread_create  -fuse-ld=gold CMakeFiles/cmTC_c8ea6.dir/CheckFunctionExists.c.o  -o cmTC_c8ea6  -lpthreads && :
+/usr/bin/ld.gold: error: cannot find -lpthreads
+CMakeFiles/cmTC_c8ea6.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'pthread_create'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+

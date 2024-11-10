@@ -1,0 +1,7 @@
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/offboard_node.cpp: In member function ‘void Offboard::waypoint_cb(const ros::TimerEvent&)’:
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/offboard_node.cpp:27:5: error: ‘current_waypoint’ was not declared in this scope
+   27 |     current_waypoint = (current_waypoint + 1) % 4;
+      |     ^~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/control_scripts.dir/build.make:76: CMakeFiles/control_scripts.dir/src/scripts/offboard_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:238: CMakeFiles/control_scripts.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,13 @@
+# Target labels
+ sitl_gazebo-classic
+# Source files and their labels
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/simulation/simulator_mavlink/CMakeFiles/sitl_gazebo-classic
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/simulation/simulator_mavlink/CMakeFiles/sitl_gazebo-classic.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/simulation/simulator_mavlink/CMakeFiles/sitl_gazebo-classic-complete.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/external/Stamp/sitl_gazebo-classic/sitl_gazebo-classic-install.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/external/Stamp/sitl_gazebo-classic/sitl_gazebo-classic-mkdir.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/external/Stamp/sitl_gazebo-classic/sitl_gazebo-classic-download.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/external/Stamp/sitl_gazebo-classic/sitl_gazebo-classic-update.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/external/Stamp/sitl_gazebo-classic/sitl_gazebo-classic-patch.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/external/Stamp/sitl_gazebo-classic/sitl_gazebo-classic-configure.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/external/Stamp/sitl_gazebo-classic/sitl_gazebo-classic-build.rule

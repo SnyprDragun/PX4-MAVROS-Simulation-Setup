@@ -1,0 +1,8 @@
+prefix=/home/subho/catkin_w_s/devel/.private/dd_stl_stt
+
+Name: dd_stl_stt
+Description: Description of dd_stl_stt
+Version: 0.0.0
+Cflags: -I/home/subho/catkin_w_s/src/dd_stl_stt/include
+Libs: -L${prefix}/lib -ldd_stl_stt
+Requires: mavros_msgs roscpp rospy std_msgs

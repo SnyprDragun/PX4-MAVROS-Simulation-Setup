@@ -1,0 +1,48 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/subho/catkin_ws/Firmware/build/px4_sitl_default/build_gazebo-classic/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ab9da && [1/2] Building C object CMakeFiles/cmTC_ab9da.dir/src.c.o
+[2/2] Linking C executable cmTC_ab9da
+FAILED: cmTC_ab9da 
+: && /usr/lib/ccache/cc -DCMAKE_HAVE_LIBC_PTHREAD   CMakeFiles/cmTC_ab9da.dir/src.c.o  -o cmTC_ab9da   && :
+/usr/bin/ld: CMakeFiles/cmTC_ab9da.dir/src.c.o: in function `main':
+src.c:(.text+0x48): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x50): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5c): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/subho/catkin_ws/Firmware/build/px4_sitl_default/build_gazebo-classic/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_09d9c && [1/2] Building C object CMakeFiles/cmTC_09d9c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_09d9c
+FAILED: cmTC_09d9c 
+: && /usr/lib/ccache/cc -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_09d9c.dir/CheckFunctionExists.c.o  -o cmTC_09d9c  -lpthreads && :
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+

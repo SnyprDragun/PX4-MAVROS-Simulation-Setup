@@ -1,0 +1,11 @@
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp: In member function ‘void Controller::init_connection()’:
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:35:19: error: ‘current_state_offboard’ was not declared in this scope
+   35 |     while(ok() && current_state_offboard.connected){
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp: In member function ‘void Controller::follow_stt()’:
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:88:9: error: ‘offboard’ was not declared in this scope
+   88 |         offboard((x_u[time] + x_l[time])/2, (y_u[time] + y_l[time])/2, (z_u[time] + z_l[time])/2);
+      |         ^~~~~~~~
+make[2]: *** [CMakeFiles/dd_stl_stt.dir/build.make:102: CMakeFiles/dd_stl_stt.dir/src/scripts/STT_Controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/dd_stl_stt.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

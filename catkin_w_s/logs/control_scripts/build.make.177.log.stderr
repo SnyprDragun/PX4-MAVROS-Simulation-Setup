@@ -1,0 +1,10 @@
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:25:14: error: redeclaration of ‘Takeoff* test’
+   25 |     Takeoff* test = new Takeoff(1);
+      |              ^~~~
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:18:18: note: ‘Takeoff* test’ previously declared here
+   18 |         Takeoff* test = new Takeoff(0);
+      |                  ^~~~
+make[2]: *** [CMakeFiles/root_controller.dir/build.make:63: CMakeFiles/root_controller.dir/src/scripts/root_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:182: CMakeFiles/root_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

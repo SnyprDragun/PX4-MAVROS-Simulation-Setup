@@ -1,0 +1,10 @@
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/loiter_node.cpp: In member function ‘void Loiter::loiter(float, float, float)’:
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/loiter_node.cpp:49:15: error: redeclaration of ‘ros::Rate rate’
+   49 |     ros::Rate rate(20);
+      |               ^~~~
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/loiter_node.cpp:36:10: note: ‘ros::Rate rate’ previously declared here
+   36 |     Rate rate(20);
+      |          ^~~~
+make[2]: *** [CMakeFiles/control_scripts.dir/build.make:76: CMakeFiles/control_scripts.dir/src/scripts/loiter_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:238: CMakeFiles/control_scripts.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

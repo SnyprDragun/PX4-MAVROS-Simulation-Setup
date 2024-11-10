@@ -1,0 +1,20 @@
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:51:19: error: ‘getch’ was not declared in this scope; did you mean ‘getc’?
+   51 |         switch((c=getch())) {
+      |                   ^~~~~
+      |                   getc
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:52:14: error: ‘KEY_UP’ was not declared in this scope
+   52 |         case KEY_UP:
+      |              ^~~~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:57:14: error: ‘KEY_DOWN’ was not declared in this scope
+   57 |         case KEY_DOWN:
+      |              ^~~~~~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:62:14: error: ‘KEY_LEFT’ was not declared in this scope
+   62 |         case KEY_LEFT:
+      |              ^~~~~~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:67:14: error: ‘KEY_RIGHT’ was not declared in this scope
+   67 |         case KEY_RIGHT:
+      |              ^~~~~~~~~
+make[2]: *** [CMakeFiles/manual_controller.dir/build.make:63: CMakeFiles/manual_controller.dir/src/scripts/manual_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:292: CMakeFiles/manual_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

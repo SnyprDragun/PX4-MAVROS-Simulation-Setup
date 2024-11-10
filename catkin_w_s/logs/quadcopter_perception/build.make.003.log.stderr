@@ -1,0 +1,54 @@
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:11:5: error: invalid use of ‘this’ in non-member function
+   11 |     this->state_sub = this->nh.subscribe(state_sub_topic, 10, &Offboard::state_cb, this);
+      |     ^~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:11:23: error: invalid use of ‘this’ in non-member function
+   11 |     this->state_sub = this->nh.subscribe(state_sub_topic, 10, &Offboard::state_cb, this);
+      |                       ^~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:11:84: error: invalid use of ‘this’ in non-member function
+   11 |     this->state_sub = this->nh.subscribe(state_sub_topic, 10, &Offboard::state_cb, this);
+      |                                                                                    ^~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:14:5: error: invalid use of ‘this’ in non-member function
+   14 |     this->position_pub = this->nh.advertise<geometry_msgs::PoseStamped>(position_pub_topic, 10);
+      |     ^~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:14:26: error: invalid use of ‘this’ in non-member function
+   14 |     this->position_pub = this->nh.advertise<geometry_msgs::PoseStamped>(position_pub_topic, 10);
+      |                          ^~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:14:71: error: expected primary-expression before ‘>’ token
+   14 |     this->position_pub = this->nh.advertise<geometry_msgs::PoseStamped>(position_pub_topic, 10);
+      |                                                                       ^
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:17:5: error: invalid use of ‘this’ in non-member function
+   17 |     this->velocity_pub = this->nh.advertise<geometry_msgs::TwistStamped>(vel_pub_topic, 10);
+      |     ^~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:17:26: error: invalid use of ‘this’ in non-member function
+   17 |     this->velocity_pub = this->nh.advertise<geometry_msgs::TwistStamped>(vel_pub_topic, 10);
+      |                          ^~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:17:72: error: expected primary-expression before ‘>’ token
+   17 |     this->velocity_pub = this->nh.advertise<geometry_msgs::TwistStamped>(vel_pub_topic, 10);
+      |                                                                        ^
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:20:5: error: invalid use of ‘this’ in non-member function
+   20 |     this->set_mode_client = this->nh.serviceClient<mavros_msgs::SetMode>(set_mode_client_topic);
+      |     ^~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:20:29: error: invalid use of ‘this’ in non-member function
+   20 |     this->set_mode_client = this->nh.serviceClient<mavros_msgs::SetMode>(set_mode_client_topic);
+      |                             ^~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:20:72: error: expected primary-expression before ‘>’ token
+   20 |     this->set_mode_client = this->nh.serviceClient<mavros_msgs::SetMode>(set_mode_client_topic);
+      |                                                                        ^
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:26:12: error: ‘getch’ was not declared in this scope; did you mean ‘getc’?
+   26 |     switch(getch()) {
+      |            ^~~~~
+      |            getc
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:29:9: error: ‘pose’ was not declared in this scope
+   29 |         pose.pose.position.z += 1;
+      |         ^~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:30:9: error: ‘position_pub’ was not declared in this scope; did you mean ‘position_pub_topic’?
+   30 |         position_pub.publish(pose);
+      |         ^~~~~~~~~~~~
+      |         position_pub_topic
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:40:9: error: ‘velocity_pub’ was not declared in this scope
+   40 |         velocity_pub.publish(pose);
+      |         ^~~~~~~~~~~~
+make[2]: *** [CMakeFiles/manual_controller.dir/build.make:63: CMakeFiles/manual_controller.dir/src/scripts/manual_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:292: CMakeFiles/manual_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

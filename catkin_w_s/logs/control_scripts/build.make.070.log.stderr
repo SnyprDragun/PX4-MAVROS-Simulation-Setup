@@ -1,0 +1,8 @@
+/usr/bin/ld: CMakeFiles/root_controller.dir/src/scripts/root_controller.cpp.o: in function `main':
+root_controller.cpp:(.text+0x618): undefined reference to `Offboard::Offboard(int)'
+/usr/bin/ld: root_controller.cpp:(.text+0x620): undefined reference to `Offboard::init_connection()'
+/usr/bin/ld: root_controller.cpp:(.text+0x634): undefined reference to `Offboard::offboard(float, float, float)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/root_controller.dir/build.make:119: /home/subho/catkin_w_s/devel/.private/control_scripts/lib/control_scripts/root_controller] Error 1
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/root_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

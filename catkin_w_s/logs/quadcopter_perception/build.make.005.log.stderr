@@ -1,0 +1,138 @@
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: error: no matching function for call to ‘ros::NodeHandle::subscribe(std::string&, int, void (Offboard::*)(const State&))’
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:402:14: note: candidate: ‘template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&)’
+  402 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), T* obj,
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:402:14: note:   template argument deduction/substitution failed:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: note:   candidate expects 5 arguments, 3 provided
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:413:14: note: candidate: ‘template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, T*, const ros::TransportHints&)’
+  413 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, T* obj,
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:413:14: note:   template argument deduction/substitution failed:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: note:   types ‘void (T::)(M) const’ and ‘void (Offboard::)(const State&)’ {aka ‘void (Offboard::)(const mavros_msgs::State_<std::allocator<void> >&)’} have incompatible cv-qualifiers
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:465:14: note: candidate: ‘template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&)’
+  465 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size,
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:465:14: note:   template argument deduction/substitution failed:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: note:   mismatched types ‘const boost::shared_ptr<const M>’ and ‘const State’ {aka ‘const mavros_msgs::State_<std::allocator<void> >’}
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:475:14: note: candidate: ‘template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, T*, const ros::TransportHints&)’
+  475 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size,
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:475:14: note:   template argument deduction/substitution failed:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: note:   types ‘void (T::)(const boost::shared_ptr<const M>&) const’ and ‘void (Offboard::)(const State&)’ {aka ‘void (Offboard::)(const mavros_msgs::State_<std::allocator<void> >&)’} have incompatible cv-qualifiers
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:529:14: note: candidate: ‘template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), const boost::shared_ptr<U>&, const ros::TransportHints&)’
+  529 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(T::*fp)(M),
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:529:14: note:   template argument deduction/substitution failed:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: note:   candidate expects 5 arguments, 3 provided
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:540:14: note: candidate: ‘template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, const boost::shared_ptr<U>&, const ros::TransportHints&)’
+  540 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const,
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:540:14: note:   template argument deduction/substitution failed:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: note:   types ‘void (T::)(M) const’ and ‘void (Offboard::)(const State&)’ {aka ‘void (Offboard::)(const mavros_msgs::State_<std::allocator<void> >&)’} have incompatible cv-qualifiers
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:594:14: note: candidate: ‘template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), const boost::shared_ptr<U>&, const ros::TransportHints&)’
+  594 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size,
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:594:14: note:   template argument deduction/substitution failed:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: note:   mismatched types ‘const boost::shared_ptr<const M>’ and ‘const State’ {aka ‘const mavros_msgs::State_<std::allocator<void> >’}
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:605:14: note: candidate: ‘template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, const boost::shared_ptr<U>&, const ros::TransportHints&)’
+  605 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size,
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:605:14: note:   template argument deduction/substitution failed:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: note:   types ‘void (T::)(const boost::shared_ptr<const M>&) const’ and ‘void (Offboard::)(const State&)’ {aka ‘void (Offboard::)(const mavros_msgs::State_<std::allocator<void> >&)’} have incompatible cv-qualifiers
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:656:14: note: candidate: ‘template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&)’
+  656 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(*fp)(M), const TransportHints& transport_hints = TransportHints())
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:656:14: note:   template argument deduction/substitution failed:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: note:   mismatched types ‘void (*)(M)’ and ‘void (Offboard::*)(const State&)’ {aka ‘void (Offboard::*)(const mavros_msgs::State_<std::allocator<void> >&)’}
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:704:14: note: candidate: ‘template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(const boost::shared_ptr<const M>&), const ros::TransportHints&)’
+  704 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size, void(*fp)(const boost::shared_ptr<M const>&), const TransportHints& transport_hints = TransportHints())
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:704:14: note:   template argument deduction/substitution failed:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: note:   mismatched types ‘void (*)(const boost::shared_ptr<const M>&)’ and ‘void (Offboard::*)(const State&)’ {aka ‘void (Offboard::*)(const mavros_msgs::State_<std::allocator<void> >&)’}
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:750:14: note: candidate: ‘template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&)’
+  750 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size, const boost::function<void (const boost::shared_ptr<M const>&)>& callback,
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:750:14: note:   template argument deduction/substitution failed:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: note:   mismatched types ‘const boost::function<void(const boost::shared_ptr<const M>&)>’ and ‘void (Offboard::*)(const State&)’ {aka ‘void (Offboard::*)(const mavros_msgs::State_<std::allocator<void> >&)’}
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:799:14: note: candidate: ‘template<class M, class C> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(C)>&, const VoidConstPtr&, const ros::TransportHints&)’
+  799 |   Subscriber subscribe(const std::string& topic, uint32_t queue_size, const boost::function<void (C)>& callback,
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:799:14: note:   template argument deduction/substitution failed:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:27:81: note:   mismatched types ‘const boost::function<void(C)>’ and ‘void (Offboard::*)(const State&)’ {aka ‘void (Offboard::*)(const mavros_msgs::State_<std::allocator<void> >&)’}
+   27 |     Subscriber state_sub = nh.subscribe(state_sub_topic, 10, &Offboard::state_cb);
+      |                                                                                 ^
+In file included from /opt/ros/noetic/include/ros/ros.h:45,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/include/quadcopter_perception/takeoff_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/opt/ros/noetic/include/ros/node_handle.h:836:14: note: candidate: ‘ros::Subscriber ros::NodeHandle::subscribe(ros::SubscribeOptions&)’
+  836 |   Subscriber subscribe(SubscribeOptions& ops);
+      |              ^~~~~~~~~
+/opt/ros/noetic/include/ros/node_handle.h:836:14: note:   candidate expects 1 argument, 3 provided
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:45:12: error: ‘getch’ was not declared in this scope; did you mean ‘getc’?
+   45 |     switch(getch()) {
+      |            ^~~~~
+      |            getc
+make[2]: *** [CMakeFiles/manual_controller.dir/build.make:63: CMakeFiles/manual_controller.dir/src/scripts/manual_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:292: CMakeFiles/manual_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

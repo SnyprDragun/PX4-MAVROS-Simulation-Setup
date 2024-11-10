@@ -1,0 +1,7 @@
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:34:17: error: request for member ‘init_connection’ in ‘takeoff’, which is of pointer type ‘Takeoff*’ (maybe you meant to use ‘->’ ?)
+   34 |         takeoff.init_connection();
+      |                 ^~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/root_controller.dir/build.make:63: CMakeFiles/root_controller.dir/src/scripts/root_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:182: CMakeFiles/root_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

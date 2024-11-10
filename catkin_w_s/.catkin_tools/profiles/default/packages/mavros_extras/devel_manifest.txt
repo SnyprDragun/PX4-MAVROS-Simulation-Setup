@@ -1,0 +1,8 @@
+mavros/mavros_extras
+/home/subho/catkin_w_s/devel/.private/mavros_extras/cmake.lock /home/subho/catkin_w_s/devel/./cmake.lock
+/home/subho/catkin_w_s/devel/.private/mavros_extras/lib/libmavros_extras.so /home/subho/catkin_w_s/devel/lib/libmavros_extras.so
+/home/subho/catkin_w_s/devel/.private/mavros_extras/lib/mavros_extras/servo_state_publisher /home/subho/catkin_w_s/devel/lib/mavros_extras/servo_state_publisher
+/home/subho/catkin_w_s/devel/.private/mavros_extras/lib/mavros_extras/visualization /home/subho/catkin_w_s/devel/lib/mavros_extras/visualization
+/home/subho/catkin_w_s/devel/.private/mavros_extras/lib/pkgconfig/mavros_extras.pc /home/subho/catkin_w_s/devel/lib/pkgconfig/mavros_extras.pc
+/home/subho/catkin_w_s/devel/.private/mavros_extras/share/mavros_extras/cmake/mavros_extrasConfig.cmake /home/subho/catkin_w_s/devel/share/mavros_extras/cmake/mavros_extrasConfig.cmake
+/home/subho/catkin_w_s/devel/.private/mavros_extras/share/mavros_extras/cmake/mavros_extrasConfig-version.cmake /home/subho/catkin_w_s/devel/share/mavros_extras/cmake/mavros_extrasConfig-version.cmake

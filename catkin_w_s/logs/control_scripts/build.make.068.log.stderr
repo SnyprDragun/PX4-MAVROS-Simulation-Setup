@@ -1,0 +1,28 @@
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:41:22: error: redeclaration of ‘Offboard offboard’
+   41 |             Offboard offboard(uav_id);
+      |                      ^~~~~~~~
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:35:22: note: ‘Offboard offboard’ previously declared here
+   35 |             Offboard offboard(uav_id);
+      |                      ^~~~~~~~
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:47:22: error: redeclaration of ‘Offboard offboard’
+   47 |             Offboard offboard(uav_id);
+      |                      ^~~~~~~~
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:35:22: note: ‘Offboard offboard’ previously declared here
+   35 |             Offboard offboard(uav_id);
+      |                      ^~~~~~~~
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:53:22: error: redeclaration of ‘Offboard offboard’
+   53 |             Offboard offboard(uav_id);
+      |                      ^~~~~~~~
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:35:22: note: ‘Offboard offboard’ previously declared here
+   35 |             Offboard offboard(uav_id);
+      |                      ^~~~~~~~
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:59:22: error: redeclaration of ‘Offboard offboard’
+   59 |             Offboard offboard(uav_id);
+      |                      ^~~~~~~~
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:35:22: note: ‘Offboard offboard’ previously declared here
+   35 |             Offboard offboard(uav_id);
+      |                      ^~~~~~~~
+make[2]: *** [CMakeFiles/root_controller.dir/build.make:63: CMakeFiles/root_controller.dir/src/scripts/root_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/root_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

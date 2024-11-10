@@ -1,0 +1,8 @@
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:46:12: error: ‘getch’ was not declared in this scope; did you mean ‘getc’?
+   46 |     switch(getch()) {
+      |            ^~~~~
+      |            getc
+make[2]: *** [CMakeFiles/manual_controller.dir/build.make:63: CMakeFiles/manual_controller.dir/src/scripts/manual_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:292: CMakeFiles/manual_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

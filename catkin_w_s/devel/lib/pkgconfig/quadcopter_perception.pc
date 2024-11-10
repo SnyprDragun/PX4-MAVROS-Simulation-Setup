@@ -1,0 +1,1 @@
+/home/subho/catkin_w_s/devel/.private/quadcopter_perception/lib/pkgconfig/quadcopter_perception.pc

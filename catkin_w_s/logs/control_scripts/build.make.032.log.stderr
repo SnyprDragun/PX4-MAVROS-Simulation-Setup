@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/control_scripts.dir/src/scripts/landing_node.cpp.o: in function `main':
+landing_node.cpp:(.text+0xaf8): multiple definition of `main'; CMakeFiles/control_scripts.dir/src/scripts/loiter_node.cpp.o:loiter_node.cpp:(.text+0xb04): first defined here
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/control_scripts.dir/build.make:131: /home/subho/catkin_w_s/devel/.private/control_scripts/lib/libcontrol_scripts.so] Error 1
+make[1]: *** [CMakeFiles/Makefile2:238: CMakeFiles/control_scripts.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,6 @@
+[31m[1mCMake Error[0m at /home/subho/catkin_w_s/src/control_scripts/CMakeLists.txt:125 (add_library):
+  No SOURCES given to target: control_scripts
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+make: *** [Makefile:880: cmake_check_build_system] Error 1

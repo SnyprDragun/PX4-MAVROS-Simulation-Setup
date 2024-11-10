@@ -1,0 +1,68 @@
+[35m[1mScanning dependencies of target dd_stl_stt[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/dd_stl_stt.dir/src/scripts/STT_Controller.cpp.o[0m
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:6:1: error: ‘Controller’ does not name a type
+    6 | Controller::Controller(){
+      | ^~~~~~~~~~
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:23:6: error: ‘Controller’ has not been declared
+   23 | void Controller::state_cb(const mavros_msgs::State& msg){
+      |      ^~~~~~~~~~
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:27:6: error: ‘Controller’ has not been declared
+   27 | void Controller::position_cb(const geometry_msgs::PoseStamped& msg){
+      |      ^~~~~~~~~~
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:31:6: error: ‘Controller’ has not been declared
+   31 | void Controller::init_connection(){
+      |      ^~~~~~~~~~
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp: In function ‘void init_connection()’:
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:35:19: error: ‘current_state_offboard’ was not declared in this scope
+   35 |     while(ok() && current_state_offboard.connected){
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp: At global scope:
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:44:21: error: ‘Controller’ has not been declared
+   44 | std::vector<double> Controller::gamma(double time){
+      |                     ^~~~~~~~~~
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:44:21: error: ambiguating new declaration of ‘std::vector<double> gamma(double)’
+In file included from /usr/include/features.h:461,
+                 from /usr/include/aarch64-linux-gnu/c++/9/bits/os_defines.h:39,
+                 from /usr/include/aarch64-linux-gnu/c++/9/bits/c++config.h:528,
+                 from /usr/include/c++/9/cstdlib:41,
+                 from /usr/include/c++/9/stdlib.h:36,
+                 from /opt/ros/noetic/include/ros/platform.h:37,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/subho/catkin_w_s/src/dd_stl_stt/include/dd_stl_stt/offboard_node.hpp:4,
+                 from /home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:1:
+/usr/include/aarch64-linux-gnu/bits/mathcalls.h:241:1: note: old declaration ‘double gamma(double)’
+  241 | __MATHCALL (gamma,, (_Mdouble_));
+      | ^~~~~~~~~~
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:63:6: error: ‘Controller’ has not been declared
+   63 | void Controller::controller(){
+      |      ^~~~~~~~~~
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:67:6: error: ‘Controller’ has not been declared
+   67 | void Controller::follow_stt(){
+      |      ^~~~~~~~~~
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp: In function ‘void follow_stt()’:
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:78:36: error: invalid types ‘double[int]’ for array subscript
+   78 |         x_u.push_back(gamma(time)[0]);
+      |                                    ^
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:79:36: error: invalid types ‘double[int]’ for array subscript
+   79 |         x_l.push_back(gamma(time)[1]);
+      |                                    ^
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:80:36: error: invalid types ‘double[int]’ for array subscript
+   80 |         y_u.push_back(gamma(time)[2]);
+      |                                    ^
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:81:36: error: invalid types ‘double[int]’ for array subscript
+   81 |         y_l.push_back(gamma(time)[3]);
+      |                                    ^
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:82:36: error: invalid types ‘double[int]’ for array subscript
+   82 |         z_u.push_back(gamma(time)[4]);
+      |                                    ^
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:83:36: error: invalid types ‘double[int]’ for array subscript
+   83 |         z_l.push_back(gamma(time)[5]);
+      |                                    ^
+/home/subho/catkin_w_s/src/dd_stl_stt/src/scripts/STT_Controller.cpp:88:9: error: ‘offboard’ was not declared in this scope; did you mean ‘Offboard’?
+   88 |         offboard((x_u[time] + x_l[time])/2, (y_u[time] + y_l[time])/2, (z_u[time] + z_l[time])/2);
+      |         ^~~~~~~~
+      |         Offboard
+make[2]: *** [CMakeFiles/dd_stl_stt.dir/build.make:102: CMakeFiles/dd_stl_stt.dir/src/scripts/STT_Controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/dd_stl_stt.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

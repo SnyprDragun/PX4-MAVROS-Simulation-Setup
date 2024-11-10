@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target dd_stl_stt[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/dd_stl_stt.dir/src/scripts/STT_Controller.cpp.o[0m
+[ 28%] [32m[1mLinking CXX shared library /home/subho/catkin_w_s/devel/.private/dd_stl_stt/lib/libdd_stl_stt.so[0m
+[ 71%] Built target dd_stl_stt
+[35m[1mScanning dependencies of target root_controller[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/root_controller.dir/src/scripts/root_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/subho/catkin_w_s/devel/.private/dd_stl_stt/lib/dd_stl_stt/root_controller[0m
+[100%] Built target root_controller

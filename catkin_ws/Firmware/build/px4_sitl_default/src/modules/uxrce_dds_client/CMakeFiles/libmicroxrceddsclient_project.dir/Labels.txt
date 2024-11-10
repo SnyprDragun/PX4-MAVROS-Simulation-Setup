@@ -1,0 +1,13 @@
+# Target labels
+ libmicroxrceddsclient_project
+# Source files and their labels
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/uxrce_dds_client/CMakeFiles/libmicroxrceddsclient_project
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/uxrce_dds_client/CMakeFiles/libmicroxrceddsclient_project.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/uxrce_dds_client/CMakeFiles/libmicroxrceddsclient_project-complete.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-stamp/libmicroxrceddsclient_project-install.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-stamp/libmicroxrceddsclient_project-mkdir.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-stamp/libmicroxrceddsclient_project-download.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-stamp/libmicroxrceddsclient_project-update.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-stamp/libmicroxrceddsclient_project-patch.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-stamp/libmicroxrceddsclient_project-configure.rule
+/home/subho/catkin_ws/Firmware/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-stamp/libmicroxrceddsclient_project-build.rule

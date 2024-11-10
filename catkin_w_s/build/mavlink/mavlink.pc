@@ -1,0 +1,8 @@
+prefix=/home/subho/catkin_w_s/devel
+exec_prefix=/home/subho/catkin_w_s/devel
+includedir=${prefix}/include
+
+Name: mavlink
+Description: MAVLink micro air vehicle marshalling / communication library
+Version: 2023.6.6
+Cflags: -I${includedir}

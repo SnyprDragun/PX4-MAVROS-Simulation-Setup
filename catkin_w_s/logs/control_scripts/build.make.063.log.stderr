@@ -1,0 +1,10 @@
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/loiter_node.cpp: In constructor ‘Loiter::Loiter(int)’:
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/loiter_node.cpp:75:70: error: invalid use of non-static member function ‘void Loiter::state_cb(const State&)’
+   75 |     state_sub = nh.subscribe<mavros_msgs::State>("mavros/state", 10, state_cb);
+      |                                                                      ^~~~~~~~
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/loiter_node.cpp:67:6: note: declared here
+   67 | void Loiter::state_cb(const mavros_msgs::State& msg){
+      |      ^~~~~~
+make[2]: *** [CMakeFiles/control_scripts.dir/build.make:76: CMakeFiles/control_scripts.dir/src/scripts/loiter_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:238: CMakeFiles/control_scripts.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

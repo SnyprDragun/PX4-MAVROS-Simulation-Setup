@@ -1,0 +1,6 @@
+devel_space: /home/subho/catkin_w_s/devel
+install: false
+install_space: /home/subho/catkin_w_s/install
+profile: default
+source_space: /home/subho/catkin_w_s/src
+workspace: /home/subho/catkin_w_s

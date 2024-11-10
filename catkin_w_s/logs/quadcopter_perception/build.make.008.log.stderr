@@ -1,0 +1,18 @@
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:46:17: error: too few arguments to function ‘int getc(FILE*)’
+   46 |     switch(getc()) {
+      |                 ^
+In file included from /usr/include/c++/9/cstdio:42,
+                 from /usr/include/c++/9/ext/string_conversions.h:43,
+                 from /usr/include/c++/9/bits/basic_string.h:6496,
+                 from /usr/include/c++/9/string:55,
+                 from /opt/ros/noetic/include/ros/platform.h:38,
+                 from /opt/ros/noetic/include/ros/time.h:53,
+                 from /opt/ros/noetic/include/ros/ros.h:38,
+                 from /home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/manual_controller.cpp:1:
+/usr/include/stdio.h:486:12: note: declared here
+  486 | extern int getc (FILE *__stream);
+      |            ^~~~
+make[2]: *** [CMakeFiles/manual_controller.dir/build.make:63: CMakeFiles/manual_controller.dir/src/scripts/manual_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:292: CMakeFiles/manual_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

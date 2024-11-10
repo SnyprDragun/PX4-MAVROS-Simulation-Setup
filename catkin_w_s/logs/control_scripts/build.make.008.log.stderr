@@ -1,0 +1,20 @@
+/home/subho/catkin_w_s/src/control_scripts/scripts/offboard_node.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/control_scripts/scripts/offboard_node.cpp:92:14: error: ‘class Offboard’ has no member named ‘land’
+   92 |     offboard.land();
+      |              ^~~~
+/home/subho/catkin_w_s/src/control_scripts/scripts/offboard_node.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/control_scripts/scripts/offboard_node.cpp:92:14: error: ‘class Offboard’ has no member named ‘land’
+   92 |     offboard.land();
+      |              ^~~~
+make[2]: *** [CMakeFiles/control_scripts.dir/build.make:76: CMakeFiles/control_scripts.dir/scripts/offboard_node.cpp.o] Error 1
+make[2]: *** [CMakeFiles/offboard_node.dir/build.make:63: CMakeFiles/offboard_node.dir/scripts/offboard_node.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:726: CMakeFiles/offboard_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/home/subho/catkin_w_s/src/control_scripts/scripts/takeoff_node.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/control_scripts/scripts/takeoff_node.cpp:89:13: error: ‘class Takeoff’ has no member named ‘land’
+   89 |     takeoff.land();
+      |             ^~~~
+make[2]: *** [CMakeFiles/control_scripts.dir/build.make:89: CMakeFiles/control_scripts.dir/scripts/takeoff_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:240: CMakeFiles/control_scripts.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

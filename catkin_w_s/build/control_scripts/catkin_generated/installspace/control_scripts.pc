@@ -1,0 +1,8 @@
+prefix=/home/subho/catkin_w_s/install
+
+Name: control_scripts
+Description: Description of control_scripts
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lcontrol_scripts
+Requires: mavros_msgs roscpp rospy

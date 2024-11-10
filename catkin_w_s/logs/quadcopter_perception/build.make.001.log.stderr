@@ -1,0 +1,28 @@
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/root_controller.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/root_controller.cpp:17:13: error: request for member ‘init_connection’ in ‘takeoff’, which is of non-class type ‘Takeoff()’
+   17 |     takeoff.init_connection();
+      |             ^~~~~~~~~~~~~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/root_controller.cpp:18:13: error: request for member ‘arm’ in ‘takeoff’, which is of non-class type ‘Takeoff()’
+   18 |     takeoff.arm();
+      |             ^~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/root_controller.cpp:19:13: error: request for member ‘takeoff’ in ‘takeoff’, which is of non-class type ‘Takeoff()’
+   19 |     takeoff.takeoff(altitude);
+      |             ^~~~~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/root_controller.cpp:33:22: error: request for member ‘init_connection’ in ‘offboard’, which is of non-class type ‘Offboard()’
+   33 |             offboard.init_connection();
+      |                      ^~~~~~~~~~~~~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/root_controller.cpp:34:22: error: request for member ‘offboard’ in ‘offboard’, which is of non-class type ‘Offboard()’
+   34 |             offboard.offboard(2,2,2);
+      |                      ^~~~~~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/root_controller.cpp:35:22: error: request for member ‘panorama’ in ‘offboard’, which is of non-class type ‘Offboard()’
+   35 |             offboard.panorama();
+      |                      ^~~~~~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/root_controller.cpp:47:10: error: request for member ‘init_connection’ in ‘land’, which is of non-class type ‘Land()’
+   47 |     land.init_connection();
+      |          ^~~~~~~~~~~~~~~
+/home/subho/catkin_w_s/src/quadcopter_perception/src/scripts/root_controller.cpp:48:10: error: request for member ‘land’ in ‘land’, which is of non-class type ‘Land()’
+   48 |     land.land();
+      |          ^~~~
+make[2]: *** [CMakeFiles/root_controller.dir/build.make:63: CMakeFiles/root_controller.dir/src/scripts/root_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:182: CMakeFiles/root_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

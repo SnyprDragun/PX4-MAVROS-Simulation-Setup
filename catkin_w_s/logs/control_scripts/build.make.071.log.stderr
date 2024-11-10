@@ -1,0 +1,4 @@
+make[2]: *** No rule to make target '/home/subho/catkin_w_s/src/control_scripts/src/scripts/loiter_node.cpp', needed by 'CMakeFiles/control_scripts.dir/src/scripts/loiter_node.cpp.o'.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:238: CMakeFiles/control_scripts.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,1 @@
+/home/subho/catkin_w_s/devel/.private/quadcopter_perception/share/quadcopter_perception/cmake/quadcopter_perceptionConfig-version.cmake

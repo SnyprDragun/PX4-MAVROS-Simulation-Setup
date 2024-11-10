@@ -1,0 +1,10 @@
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp: In function ‘int main(int, char**)’:
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:37:10: error: redeclaration of ‘bool flag’
+   37 |     bool flag = true;
+      |          ^~~~
+/home/subho/catkin_w_s/src/control_scripts/src/scripts/root_controller.cpp:21:10: note: ‘bool flag’ previously declared here
+   21 |     bool flag = true;
+      |          ^~~~
+make[2]: *** [CMakeFiles/root_controller.dir/build.make:63: CMakeFiles/root_controller.dir/src/scripts/root_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/root_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
